@@ -2,9 +2,6 @@
 
 **A Java Android application that suggests recipes based strictly on the ingredients a user already has at home, to help cut household food waste.**
 
-Mobile App Development 700 - Practical Assignment
-Richfield Graduate Institute of Technology - Faculty of Information Technology
-
 ---
 
 ## 1. What the app does

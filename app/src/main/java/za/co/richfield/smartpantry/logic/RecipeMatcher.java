@@ -31,8 +31,6 @@ public final class RecipeMatcher {
     }
 
     /**
-     * THE STRICT MATCHING RULE.
-     *
      * @param recipe a recipe and its required ingredients
      * @param pantry everything the user currently has at home
      * @return true only when every single requirement is satisfied in at least the required quantity

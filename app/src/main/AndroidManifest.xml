@@ -2,14 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!--
-        Smart Pantry Manager - Student: Richard Jansen van Rensburg (Change to your details)
-        Module: Mobile App Development 700
-
-        NOTE: No location, GPS or mapping permissions are requested anywhere in this app.
-        The scope of the app is strictly the user's own pantry and recipe matching.
-    -->
-
     <application
         android:name=".PantryApp"
         android:allowBackup="true"
