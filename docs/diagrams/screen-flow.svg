@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1460" height="940" viewBox="0 0 1460 940">
+<defs>
+<marker id="ah" markerWidth="11" markerHeight="9" refX="10" refY="4.5" orient="auto"><path d="M0,0 L11,4.5 L0,9 z" fill="#2E7D32"/></marker>
+<marker id="ahd" markerWidth="11" markerHeight="9" refX="10" refY="4.5" orient="auto"><path d="M0,0 L11,4.5 L0,9 z" fill="#616161"/></marker>
+<marker id="ahdd" markerWidth="11" markerHeight="9" refX="10" refY="4.5" orient="auto"><path d="M0,0 L11,4.5 L0,9 z" fill="#212121"/></marker>
+</defs>
+<rect width="1460" height="940" fill="#FFFFFF"/>
+<text x="730.0" y="44" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="27" font-weight="bold" fill="#1B5E20">Smart Pantry Manager - Screen Flow</text>
+<text x="730.0" y="72" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="13.5" fill="#616161">One host Activity with a navigation drawer hosting five Fragments, plus two form-style Activities opened with Intents</text>
+<rect x="40" y="96" width="880" height="430" rx="16" fill="#E8F5E9" stroke="#A5D6A7" stroke-width="2"/>
+<text x="64" y="128" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="14.5" font-weight="bold" fill="#1B5E20">MAIN ACTIVITY  (single host)</text>
+<text x="64" y="148" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">toolbar + FAB + navigation drawer   |   Fragments swapped into one container with replace()</text>
+<rect x="64" y="172" width="258" height="110" rx="10" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.9"/>
+<text x="193.0" y="200" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" fill="#212121">1  Pantry List</text>
+<text x="193.0" y="220" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">RecyclerView + PantryAdapter</text>
+<text x="193.0" y="236" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">reads every ingredient from SQLite</text>
+<text x="193.0" y="252" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">search, edit and delete rows</text>
+<rect x="346" y="172" width="258" height="110" rx="10" fill="#FFFFFF" stroke="#4CAF50" stroke-width="1.9"/>
+<text x="475.0" y="200" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" fill="#212121">3  Suggested Recipes</text>
+<text x="475.0" y="220" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">RecyclerView + RecipeAdapter</text>
+<text x="475.0" y="236" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">runs the STRICT matching rule</text>
+<text x="475.0" y="252" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">only fully cookable recipes</text>
+<rect x="628" y="172" width="258" height="110" rx="10" fill="#FFF8E1" stroke="#B26A00" stroke-width="1.9"/>
+<text x="757.0" y="200" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" fill="#7A4A00">5  Almost There  (bonus)</text>
+<text x="757.0" y="220" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#7A4A00">recipes missing exactly ONE</text>
+<text x="757.0" y="236" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#7A4A00">ingredient - deliberately kept</text>
+<text x="757.0" y="252" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#7A4A00">apart from the strict list</text>
+<rect x="64" y="308" width="258" height="100" rx="10" fill="#FFFFFF" stroke="#4CAF50" stroke-width="1.9"/>
+<text x="193.0" y="336" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" fill="#212121">6  Insights</text>
+<text x="193.0" y="356" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">pantry items, recipes in library,</text>
+<text x="193.0" y="372" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">recipes cookable right now and</text>
+<text x="193.0" y="388" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">items expiring soon</text>
+<rect x="346" y="308" width="258" height="100" rx="10" fill="#FFFFFF" stroke="#4CAF50" stroke-width="1.9"/>
+<text x="475.0" y="336" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" fill="#212121">7  Settings</text>
+<text x="475.0" y="356" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">SharedPreferences: expiry alerts,</text>
+<text x="475.0" y="372" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">alert window, unit system, bonus</text>
+<text x="475.0" y="388" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">list toggle, demo pantry</text>
+<rect x="980" y="172" width="420" height="110" rx="10" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.9"/>
+<text x="1190.0" y="200" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" fill="#212121">2  Add / Edit Ingredient   (separate Activity)</text>
+<text x="1190.0" y="220" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">receives an ingredient id through an Intent extra</text>
+<text x="1190.0" y="236" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">validates every field, then inserts or updates the row</text>
+<text x="1190.0" y="252" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">also performs the Delete action</text>
+<rect x="980" y="308" width="420" height="100" rx="10" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.9"/>
+<text x="1190.0" y="336" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" fill="#212121">4  Recipe Detail   (separate Activity)</text>
+<text x="1190.0" y="356" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">receives a recipe id through an Intent extra</text>
+<text x="1190.0" y="372" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">ingredient checklist + method + live status</text>
+<text x="1190.0" y="388" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">re-evaluated against the pantry on resume</text>
+<rect x="64" y="566" width="392" height="100" rx="10" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.9"/>
+<text x="260.0" y="594" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="14.5" font-weight="bold" fill="#212121">RecipeMatcher   (pure Java logic)</text>
+<text x="260.0" y="614" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">isCookable() = every requirement is present,</text>
+<text x="260.0" y="630" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">in at least the required quantity</text>
+<text x="260.0" y="646" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">name normalising + unit converting</text>
+<rect x="480" y="566" width="420" height="100" rx="10" fill="#1B5E20" stroke="#1B5E20" stroke-width="1.9"/>
+<text x="690.0" y="594" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="14.5" font-weight="bold" fill="#FFFFFF">DatabaseHelper   (SQLiteOpenHelper)</text>
+<text x="690.0" y="614" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#C8E6C9">all CRUD in one class - no Activity writes SQL</text>
+<text x="690.0" y="630" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#C8E6C9">seeds 23 recipes on first run</text>
+<text x="690.0" y="646" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#C8E6C9">data persists across app restarts</text>
+<rect x="924" y="566" width="476" height="100" rx="10" fill="#E0E0E0" stroke="#616161" stroke-width="1.9"/>
+<text x="1162.0" y="594" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="14.5" font-weight="bold" fill="#212121">SettingsManager   (SharedPreferences)</text>
+<text x="1162.0" y="614" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">expiring-soon alerts on / off and the alert window</text>
+<text x="1162.0" y="630" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">quantity display units</text>
+<text x="1162.0" y="646" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">show / hide the bonus Almost There list</text>
+<text x="690" y="706" text-anchor="middle" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="12.5" fill="#616161">smart_pantry.db  ->  pantry_item | recipe | recipe_ingredient</text>
+<text x="1162" y="706" text-anchor="middle" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="12.5" fill="#616161">smart_pantry_settings.xml</text>
+<path d="M 322 214 L 356 214" fill="none" stroke="#4CAF50" stroke-width="2"  marker-end="url(#ah)"/>
+<path d="M 322 356 L 356 356" fill="none" stroke="#4CAF50" stroke-width="2"  marker-end="url(#ah)"/>
+<path d="M 604 205 C 760 150, 880 150, 980 196" fill="none" stroke="#2E7D32" stroke-width="2"  marker-end="url(#ah)"/>
+<text x="790" y="150" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#2E7D32">Intent: add (FAB / empty state) or edit (row tap)</text>
+<text x="790" y="166" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#2E7D32">extra: ingredient id</text>
+<path d="M 980 330 L 610 366" fill="none" stroke="#2E7D32" stroke-width="2"  marker-end="url(#ah)"/>
+<text x="795" y="352" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#2E7D32">Intent: recipe id - opens the full recipe</text>
+<path d="M 480 526 L 480 560" fill="none" stroke="#616161" stroke-width="2"/>
+<path d="M 260 560 L 1162 560" fill="none" stroke="#616161" stroke-width="2"/>
+<path d="M 260 560 L 260 566" fill="none" stroke="#616161" stroke-width="2" marker-end="url(#ahd)"/>
+<path d="M 690 560 L 690 566" fill="none" stroke="#616161" stroke-width="2" marker-end="url(#ahd)"/>
+<path d="M 1162 560 L 1162 566" fill="none" stroke="#616161" stroke-width="2" marker-end="url(#ahd)"/>
+<text x="1200" y="552" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="12" font-weight="bold" fill="#616161">every screen uses these components</text>
+<path d="M 690 526 L 690 560" fill="none" stroke="#616161" stroke-width="2"  marker-end="url(#ahd)"/>
+<path d="M 690 512 L 690 560" fill="none" stroke="#2E7D32" stroke-width="2"  marker-end="url(#ah)"/>
+<rect x="440" y="748" width="580" height="36" rx="18" fill="#C8E6C9"/>
+<text x="730" y="771" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="13" fill="#1B5E20">The navigation drawer switches between screens 1, 3, 5, 6 and 7</text>
+<text x="730.0" y="818" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="12.5" fill="#616161">Every list screen reloads from SQLite in onResume(), so a change made on one screen is immediately visible on the others.</text>
+</svg>

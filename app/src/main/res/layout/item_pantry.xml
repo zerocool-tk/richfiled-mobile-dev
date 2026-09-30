@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One row of the pantry list. Bound to an Ingredient object by PantryAdapter. -->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginEnd="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="1dp"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="14dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/grey_900"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Tomatoes" />
+
+            <TextView
+                android:id="@+id/text_item_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/green_700"
+                android:textSize="14sp"
+                tools:text="6 items" />
+
+            <TextView
+                android:id="@+id/text_item_expiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/grey_700"
+                android:textSize="12sp"
+                android:visibility="gone"
+                tools:text="Best before 2026-10-02"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+        <!-- Warning icon, only shown when the item expires within the alert window. -->
+        <ImageView
+            android:id="@+id/image_expiry_warning"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="6dp"
+            android:contentDescription="@string/cd_expiring"
+            android:src="@drawable/ic_expiring"
+            android:visibility="gone"
+            app:tint="@color/amber_700"
+            tools:visibility="visible" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_edit_item"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/cd_edit"
+            app:icon="@drawable/ic_edit"
+            app:iconTint="@color/green_700" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_delete_item"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/cd_delete"
+            app:icon="@drawable/ic_delete"
+            app:iconTint="@color/red_700" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One ingredient requirement on the recipe detail screen. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="8dp">
+
+    <ImageView
+        android:id="@+id/image_detail_status"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="@string/recipe_have_it"
+        android:src="@drawable/ic_check"
+        app:tint="@color/green_700" />
+
+    <TextView
+        android:id="@+id/text_detail_ingredient"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:textColor="@color/grey_900"
+        android:textSize="15sp"
+        tools:text="3 Eggs" />
+
+    <TextView
+        android:id="@+id/text_detail_availability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green_700"
+        android:textSize="12sp"
+        tools:text="In pantry" />
+</LinearLayout>

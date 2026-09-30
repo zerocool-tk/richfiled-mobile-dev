@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="880" viewBox="0 0 1420 880">
+<defs>
+<marker id="ah" markerWidth="11" markerHeight="9" refX="10" refY="4.5" orient="auto"><path d="M0,0 L11,4.5 L0,9 z" fill="#2E7D32"/></marker>
+<marker id="ahd" markerWidth="11" markerHeight="9" refX="10" refY="4.5" orient="auto"><path d="M0,0 L11,4.5 L0,9 z" fill="#616161"/></marker>
+<marker id="ahdd" markerWidth="11" markerHeight="9" refX="10" refY="4.5" orient="auto"><path d="M0,0 L11,4.5 L0,9 z" fill="#212121"/></marker>
+</defs>
+<rect width="1420" height="880" fill="#FFFFFF"/>
+<text x="710.0" y="44" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="27" font-weight="bold" fill="#1B5E20">Smart Pantry Manager - Database Design (ER Diagram)</text>
+<text x="710.0" y="72" text-anchor="middle" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="13.5" fill="#616161">SQLite database smart_pantry.db, created and versioned by DatabaseHelper (SQLiteOpenHelper, version 1)</text>
+<rect x="60" y="150" width="600" height="200" rx="10" fill="#FFFFFF" stroke="#2E7D32" stroke-width="2.2"/>
+<path d="M 60 190 L 60 160 Q 60 150 70 150 L 650 150 Q 660 150 660 160 L 660 190 Z" fill="#2E7D32"/>
+<text x="76" y="176" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">pantry_item   -   what the user actually has</text>
+<line x1="60" y1="190" x2="660" y2="190" stroke="#E0E0E0" stroke-width="1"/>
+<text x="76" y="211" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="13" font-weight="bold" fill="#2E7D32">_id</text>
+<text x="644" y="211" text-anchor="end" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="11.5" fill="#616161">INTEGER  PRIMARY KEY AUTOINCREMENT</text>
+<line x1="60" y1="222" x2="660" y2="222" stroke="#E0E0E0" stroke-width="1"/>
+<text x="76" y="243" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="13" font-weight="normal" fill="#212121">name</text>
+<text x="644" y="243" text-anchor="end" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="11.5" fill="#616161">TEXT NOT NULL</text>
+<line x1="60" y1="254" x2="660" y2="254" stroke="#E0E0E0" stroke-width="1"/>
+<text x="76" y="275" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="13" font-weight="normal" fill="#212121">quantity</text>
+<text x="644" y="275" text-anchor="end" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="11.5" fill="#616161">REAL NOT NULL   (&gt; 0)</text>
+<line x1="60" y1="286" x2="660" y2="286" stroke="#E0E0E0" stroke-width="1"/>
+<text x="76" y="307" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="13" font-weight="normal" fill="#212121">unit</text>
+<text x="644" y="307" text-anchor="end" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="11.5" fill="#616161">TEXT NOT NULL   g | kg | ml | l | tsp | tbsp | count</text>
+<line x1="60" y1="318" x2="660" y2="318" stroke="#E0E0E0" stroke-width="1"/>
+<text x="76" y="339" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="13" font-weight="normal" fill="#212121">expiry_date</text>
+<text x="644" y="339" text-anchor="end" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="11.5" fill="#616161">TEXT NULL   ISO yyyy-MM-dd</text>
+<rect x="800" y="110" width="560" height="168" rx="10" fill="#FFFFFF" stroke="#1B5E20" stroke-width="2.2"/>
+<path d="M 800 150 L 800 120 Q 800 110 810 110 L 1350 110 Q 1360 110 1360 120 L 1360 150 Z" fill="#1B5E20"/>
+<text x="816" y="136" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">recipe   -   seeded once on first run, 23 rows</text>
+<line x1="800" y1="150" x2="1360" y2="150" stroke="#E0E0E0" stroke-width="1"/>
+<text x="816" y="171" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="13" font-weight="bold" fill="#1B5E20">_id</text>
+<text x="1344" y="171" text-anchor="end" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="11.5" fill="#616161">INTEGER  PRIMARY KEY AUTOINCREMENT</text>
+<line x1="800" y1="182" x2="1360" y2="182" stroke="#E0E0E0" stroke-width="1"/>
+<text x="816" y="203" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="13" font-weight="normal" fill="#212121">name</text>
+<text x="1344" y="203" text-anchor="end" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="11.5" fill="#616161">TEXT NOT NULL UNIQUE</text>
+<line x1="800" y1="214" x2="1360" y2="214" stroke="#E0E0E0" stroke-width="1"/>
+<text x="816" y="235" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="13" font-weight="normal" fill="#212121">category</text>
+<text x="1344" y="235" text-anchor="end" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="11.5" fill="#616161">TEXT   Breakfast | Pasta | Beef | ...</text>
+<line x1="800" y1="246" x2="1360" y2="246" stroke="#E0E0E0" stroke-width="1"/>
+<text x="816" y="267" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="13" font-weight="normal" fill="#212121">steps</text>
+<text x="1344" y="267" text-anchor="end" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="11.5" fill="#616161">TEXT NOT NULL   numbered method</text>
+<rect x="800" y="420" width="560" height="200" rx="10" fill="#FFFFFF" stroke="#4CAF50" stroke-width="2.2"/>
+<path d="M 800 460 L 800 430 Q 800 420 810 420 L 1350 420 Q 1360 420 1360 430 L 1360 460 Z" fill="#4CAF50"/>
+<text x="816" y="446" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">recipe_ingredient   -   one row per requirement</text>
+<line x1="800" y1="460" x2="1360" y2="460" stroke="#E0E0E0" stroke-width="1"/>
+<text x="816" y="481" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="13" font-weight="bold" fill="#4CAF50">_id</text>
+<text x="1344" y="481" text-anchor="end" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="11.5" fill="#616161">INTEGER  PRIMARY KEY AUTOINCREMENT</text>
+<line x1="800" y1="492" x2="1360" y2="492" stroke="#E0E0E0" stroke-width="1"/>
+<text x="816" y="513" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="13" font-weight="bold" fill="#4CAF50">recipe_id</text>
+<text x="1344" y="513" text-anchor="end" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="11.5" fill="#616161">INTEGER NOT NULL   FK -&gt; recipe(_id)</text>
+<line x1="800" y1="524" x2="1360" y2="524" stroke="#E0E0E0" stroke-width="1"/>
+<text x="816" y="545" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="13" font-weight="normal" fill="#212121">name</text>
+<text x="1344" y="545" text-anchor="end" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="11.5" fill="#616161">TEXT NOT NULL</text>
+<line x1="800" y1="556" x2="1360" y2="556" stroke="#E0E0E0" stroke-width="1"/>
+<text x="816" y="577" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="13" font-weight="normal" fill="#212121">quantity</text>
+<text x="1344" y="577" text-anchor="end" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="11.5" fill="#616161">REAL NOT NULL   required amount</text>
+<line x1="800" y1="588" x2="1360" y2="588" stroke="#E0E0E0" stroke-width="1"/>
+<text x="816" y="609" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="13" font-weight="normal" fill="#212121">unit</text>
+<text x="1344" y="609" text-anchor="end" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="11.5" fill="#616161">TEXT NOT NULL   required unit</text>
+<path d="M 1080 278 L 1080 420" fill="none" stroke="#212121" stroke-width="2.2" marker-end="url(#ahdd)"/>
+<text x="1096" y="304" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#212121">1</text>
+<text x="1096" y="406" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#212121">N</text>
+<text x="1112" y="300" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="12.5" fill="#212121">one recipe has many</text>
+<text x="1112" y="318" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="12.5" fill="#212121">required ingredients</text>
+<text x="1112" y="336" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161">ON DELETE CASCADE</text>
+<path d="M 660 300 L 706 300 L 706 470 L 795 470" fill="none" stroke="#2E7D32" stroke-width="2.6" stroke-dasharray="9 7" marker-end="url(#ah)"/>
+<circle cx="660" cy="300" r="5" fill="#2E7D32"/>
+<text x="392" y="466" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="13.5" font-weight="bold" fill="#2E7D32">in-memory comparison:</text>
+<text x="392" y="486" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="12" fill="#616161">name + quantity + unit,</text>
+<text x="392" y="504" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="12" fill="#616161">no SQL join is used.</text>
+<rect x="60" y="560" width="600" height="268" rx="12" fill="#E8F5E9" stroke="#A5D6A7" stroke-width="1.8"/>
+<text x="84" y="594" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" fill="#1B5E20">How the two sides meet</text>
+<text x="84" y="620" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="12" fill="#212121">1.  pantry_item is user-owned data: rows are created, updated and deleted</text>
+<text x="84" y="637.5" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="12" fill="#212121">     from the Pantry List and Add/Edit screens (the full CRUD cycle).</text>
+<text x="84" y="655.0" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="12" fill="#212121">2.  recipe and recipe_ingredient are reference data. They are inserted once</text>
+<text x="84" y="672.5" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="12" fill="#212121">     in DatabaseHelper.onCreate() and are never edited by the user.</text>
+<text x="84" y="690.0" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="12" fill="#212121">3.  No foreign key joins the two sides - a recipe requirement is not the same</text>
+<text x="84" y="707.5" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="12" fill="#212121">     thing as an owned ingredient, so they are modelled as separate tables.</text>
+<text x="84" y="725.0" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="12" fill="#212121">4.  Matching happens in RecipeMatcher, in memory: every requirement of a</text>
+<text x="84" y="742.5" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="12" fill="#212121">     recipe must be satisfied by some pantry row for it to be suggested.</text>
+<text x="84" y="760.0" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="12" fill="#212121">5.  Units are converted to a base unit (g, ml, tsp, count) and names to a</text>
+<text x="84" y="777.5" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="12" fill="#212121">     singular key, so "0.5 kg chicken" satisfies "500 g chicken" and</text>
+<text x="84" y="795.0" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="12" fill="#212121">     "Tomatoes" satisfies "tomato".</text>
+<text x="84" y="816" font-family="Helvetica, Verdana, DejaVu Sans, sans-serif" font-size="11.5" fill="#616161" font-style="italic">Both tables are indexed on the columns the app queries most often: name and recipe_id.</text>
+</svg>

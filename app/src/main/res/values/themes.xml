@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--
+        Material 3 theme. The app is designed light-first because it is used in a kitchen, but a
+        matching night palette is provided in values-night/themes.xml.
+    -->
+    <style name="Theme.SmartPantry" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/green_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/green_100</item>
+        <item name="colorOnPrimaryContainer">@color/green_900</item>
+        <item name="colorSecondary">@color/amber_700</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/amber_100</item>
+        <item name="colorOnSecondaryContainer">@color/grey_900</item>
+        <item name="colorError">@color/red_700</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="android:colorBackground">@color/grey_50</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/grey_900</item>
+        <item name="colorOnSurfaceVariant">@color/grey_700</item>
+        <item name="android:statusBarColor">@color/green_900</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- Toolbar styling shared by the host Activity and the detail Activities. -->
+    <style name="Widget.SmartPantry.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/green_700</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="subtitleTextColor">@color/green_100</item>
+        <item name="android:theme">@style/ThemeOverlay.SmartPantry.Toolbar</item>
+    </style>
+
+    <style name="ThemeOverlay.SmartPantry.Toolbar" parent="ThemeOverlay.Material3.ActionBar">
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorOnSurfaceVariant">@color/white</item>
+    </style>
+
+    <!-- Small coloured label used for "Can cook now" / "Expiring soon". -->
+    <style name="Widget.SmartPantry.Badge" parent="Widget.Material3.CardView.Filled">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <!-- Reusable text styles so every screen looks the same. -->
+    <style name="TextAppearance.SmartPantry.SectionHeader" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">@color/green_700</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="Widget.SmartPantry.Button" parent="Widget.Material3.Button" />
+</resources>

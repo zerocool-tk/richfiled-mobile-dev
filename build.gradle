@@ -1,0 +1,8 @@
+// Top-level build file. Module level configuration lives in app/build.gradle.
+//
+// AGP 8.5.2 requires Android Studio Koala (2024.1.1) or newer and JDK 17.
+// If you have an older Android Studio installed, use a lower AGP version here,
+// for example:  id 'com.android.application' version '8.2.2' apply false
+plugins {
+    id 'com.android.application' version '8.5.2' apply false
+}

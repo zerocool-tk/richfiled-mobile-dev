@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Colour palette for the Smart Pantry Manager.
+    Greens communicate "fresh food", the amber accent is reserved for warnings such as an
+    ingredient that is about to expire.
+-->
+<resources>
+    <color name="green_900">#FF1B5E20</color>
+    <color name="green_700">#FF2E7D32</color>
+    <color name="green_500">#FF4CAF50</color>
+    <color name="green_100">#FFC8E6C9</color>
+    <color name="green_50">#FFE8F5E9</color>
+
+    <color name="amber_700">#FFF57F17</color>
+    <color name="amber_500">#FFF9A825</color>
+    <color name="amber_100">#FFFFECB3</color>
+
+    <color name="red_700">#FFC62828</color>
+    <color name="red_100">#FFFFCDD2</color>
+
+    <color name="grey_900">#FF212121</color>
+    <color name="grey_700">#FF616161</color>
+    <color name="grey_500">#FF9E9E9E</color>
+    <color name="grey_200">#FFE0E0E0</color>
+    <color name="grey_50">#FFF7F7F7</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pantry"
+            android:icon="@drawable/ic_pantry"
+            android:title="@string/nav_pantry" />
+        <item
+            android:id="@+id/nav_suggestions"
+            android:icon="@drawable/ic_recipe"
+            android:title="@string/nav_suggestions" />
+        <item
+            android:id="@+id/nav_almost_there"
+            android:icon="@drawable/ic_almost"
+            android:title="@string/nav_almost_there" />
+        <item
+            android:id="@+id/nav_insights"
+            android:icon="@drawable/ic_insights"
+            android:title="@string/nav_insights" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/nav_settings" />
+        </menu>
+    </item>
+</menu>

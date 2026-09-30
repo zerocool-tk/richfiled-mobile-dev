@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Foreground layer of the adaptive launcher icon: a white leaf. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group android:translateX="30" android:translateY="30">
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:pathData="M24,10 C34,14 42,24 42,38 C42,42 41,45 40,47 C36,44 30,42 24,42 C18,42 12,44 8,47 C7,45 6,42 6,38 C6,24 14,14 24,10 Z" />
+        <path
+            android:fillColor="#FF2E7D32"
+            android:pathData="M23,16 h2 v30 h-2 z" />
+    </group>
+</vector>

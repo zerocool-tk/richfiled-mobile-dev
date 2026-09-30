@@ -1,0 +1,21 @@
+/*
+ * Smart Pantry Manager - Gradle settings
+ * Mobile App Development 700 - Practical Assignment
+ */
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "Smart Pantry Manager"
+include ':app'
