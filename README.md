@@ -51,7 +51,7 @@ confused with a genuine match.
 
 ### Explicitly out of scope
 
-Following the brief, there is **no Google Maps, no mapping SDK and no GPS or location permission**
+There is **no Google Maps, no mapping SDK and no GPS or location permission**
 anywhere in this project. There is also no payment processing. The manifest requests no dangerous
 permissions at all.
 
@@ -208,14 +208,6 @@ id 'com.android.application' version '8.2.2' apply false
 
 Everything else in the project is compatible with AGP 8.0+.
 
-### Demonstrating the strict rule (useful for the video)
-
-1. Load the demo pantry, then open **Suggested Recipes** and note the count.
-2. Go to **My Pantry** and delete **Eggs** (or **Salt**).
-3. Return to **Suggested Recipes**: the recipes that needed that ingredient have disappeared.
-4. Open **Almost There**: those recipes now appear there, each showing the one ingredient that is missing.
-5. Add the ingredient back: they return to the strict suggestions list immediately.
-
 ---
 
 ## 5. Testing
@@ -233,8 +225,6 @@ against the matching rules, including:
 - an empty or `null` pantry suggests nothing and does not crash;
 - duplicate pantry rows are resolved in favour of the best match.
 
-Because the matching logic is plain Java with no Android imports, it runs on the development machine in
-seconds rather than needing an emulator.
 
 ---
 
@@ -246,12 +236,10 @@ See `docs/REFERENCES.md` for the documentation and tutorial sources consulted wh
 
 ## 7. Author
 
-**Name:** [Your full name]
-**Student number:** [Your ITS number]
+**Name:** Tokollo
+**Student number:** 402306773
 **Module:** Mobile App Development 700
-**Qualification:** [Your qualification]
-**Year / Semester:** [Year] / [Semester]
-**GitHub repository:** [repository link]
+**Qualification:** BSc
+**Year / Semester:** 1 / 2
+**GitHub repository:** https://github.com/zerocool-tk/richfiled-mobile-dev
 
-Assignment submitted for assessment in accordance with the Richfield Graduate Institute of Technology
-academic integrity policy.
